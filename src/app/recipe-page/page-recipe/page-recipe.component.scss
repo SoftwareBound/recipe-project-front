@@ -1,0 +1,79 @@
+.recipe-page-container {
+  text-align: right;
+  p {
+    margin: 0 0 0 0;
+  }
+}
+
+.recipe-name {
+  text-align: center;
+  font-size: 3em;
+}
+
+.recipe-prepTime {
+  text-align: center;
+  font-size: 2em;
+  color: #617073;
+}
+
+.recipe-ingredients {
+  margin: 0 0 2em 0;
+  border-bottom: solid;
+
+  input:hover {
+    cursor: pointer;
+  }
+  .ingredient-item-label-input {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: right;
+    direction: rtl;
+    input {
+      width: 1.1em;
+      height: 1.1em;
+    }
+    &.optionalIngredient {
+      label {
+        color: #735cdd;
+      }
+    }
+    &.checkboxChecked {
+      label {
+        text-decoration: line-through;
+      }
+      input {
+        accent-color: #7a93ac;
+      }
+    }
+  }
+}
+
+.ingredient-item-name {
+  font-size: 1.5em;
+  padding: 0 0.2em 2px 0.25em;
+}
+
+.ingredient-item-amount {
+  margin: 0 0 0 0.25em;
+  font-size: 1.25em;
+  font-weight: bolder;
+  color: #7a93ac;
+  padding: 4px 0 0 0;
+}
+
+.recipe-instructions {
+  margin: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-instruction-title {
+  border-bottom-style: groove;
+  font-size: 2em;
+}
+
+.recipe-instruction-content {
+  font-size: 1.5em;
+  padding: 0.5em 0 0 0;
+}
