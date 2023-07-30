@@ -1,0 +1,46 @@
+<div class="recipe-page-container">
+  <p class="recipe-name">{{ recipeData.name }}</p>
+  <p class="recipe-prepTime">זמן הכנה: {{ recipeData.preperationTime }}</p>
+  <div class="recipe-ingredients">
+    <div *ngFor="let ingredient of recipeData.ingredients">
+      <div
+        class="ingredient-item-label-input"
+        [ngClass]="{
+          checkboxChecked: isCheckboxChecked(ingredient.name),
+          optionalIngredient: ingredient.optional
+        }"
+      >
+        <input
+          type="checkbox"
+          name="{{ ingredient.name }}"
+          (change)="getCheckboxValue($event)"
+        />
+        <label for="{{ ingredient.name }}" class="ingredient-item-name">{{
+          ingredient.name
+        }}</label>
+        <label for="{{ ingredient.name }}" class="ingredient-item-amount">{{
+          ingredient.amount
+        }}</label>
+        <label
+          for="{{ ingredient.name }}"
+          class="ingredient-item-amount"
+          *ngIf="ingredient.amountType"
+        >
+          {{ ingredient.amountType }}</label
+        >
+      </div>
+    </div>
+  </div>
+
+  <div class="recipe-instructions">
+    <span *ngFor="let instruction of recipeData.instructions">
+      <p class="recipe-instruction-title">{{ instruction.title }}</p>
+      <p
+        class="recipe-instruction-content"
+        *ngFor="let instructionContent of instruction.content"
+      >
+        <span>{{ instructionContent }}</span>
+      </p>
+    </span>
+  </div>
+</div>
