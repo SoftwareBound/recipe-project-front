@@ -4,6 +4,7 @@ export interface Recipe {
   ingredients: Ingredient[];
   instructions: Instruction[];
   tags: string[];
+  description: string;
 }
 
 export type Ingredient = {
