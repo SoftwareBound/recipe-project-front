@@ -1,8 +1,46 @@
-.content {
+.main-recipe-header {
   display: flex;
-  margin: 82px auto 32px;
-  padding: 0 16px;
-  max-width: 960px;
-  flex-direction: column;
-  align-items: center;
+  border-bottom-style: solid;
+  justify-content: space-between;
+  direction: rtl;
+  position: sticky;
+  background-color: wheat;
+  top: 0;
+  img {
+    width: 9%;
+    margin: 0 0.3em;
+    border-radius: 3.8em;
+  }
+}
+
+.search-recipe-container {
+  /* This bit sets up the horizontal layout */
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  margin: 3em 2em 0 4em;
+
+  /* This bit draws the box around it */
+  border: 1px solid grey;
+
+  /* I've used padding so you can see the edges of the elements. */
+  padding: 1px;
+  input {
+    /* Tell the input to use all the available space */
+    flex-grow: 2;
+    /* And hide the input's outline, so the form looks like the outline */
+    border: none;
+    input:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    border: 1px solid wheat;
+    background: wheat;
+    color: white;
+    :hover {
+      cursor: pointer;
+    }
+  }
 }

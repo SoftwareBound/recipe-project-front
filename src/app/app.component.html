@@ -1,28 +1,18 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<!-- Toolbar -->
-
-<div class="content" role="main">
-  <!-- Highlight Card -->
-
-  <app-page-recipe></app-page-recipe>
-
-  <!-- Links -->
+<div>
+  <div class="main-recipe-header">
+    <img src="../assets/photos/logo.png" />
+    <div>
+      <p>בן צבי קלוריות</p>
+      <p>קל לאגור קלוריות!</p>
+    </div>
+    <div class="search-recipe-container">
+      <input placeholder="חפשו מתכונים כאן" />
+      <button>
+        <mat-icon> restaurant_menu</mat-icon>
+      </button>
+    </div>
+  </div>
+  <app-main-recipe-page></app-main-recipe-page>
 </div>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <router-outlet></router-outlet>
